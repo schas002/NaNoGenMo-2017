@@ -33,6 +33,22 @@ Both a test to my [story boilerplate](story-boilerplate/story.py) and a standalo
 >
 > Hello, World!
 
+### Ten Second Summaries _(ten-second-summaries)_
+
+> A catalogue of novels for NaNoGenMo 2017
+
+A something-maker generates summaries at a computer with Python for fun by making a program for NaNoGenMo 2017. Ages 12+, rated 7.8/10 on Readery.
+
+> ## Unidentified Forefront
+>
+> A garbled machinist lightens a sorcery.
+>
+> ## Wistful Parliament
+>
+> A forging machine setter shops a spectre.
+
+<!-- By the way, if someone *really* wants to make one of the ideas in Ten Second Summaries reality, I'd more than just love to see them. Send issues :) -->
+
 ## Maintainer
 
 - Andrew Zyabin - @schas002 - 2 previous Na*GenMo works
