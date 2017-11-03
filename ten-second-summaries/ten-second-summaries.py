@@ -35,13 +35,17 @@ grammar = {
 	'Adj': list(map(lambda a: a.capitalize(),
 		pycorpora.words.adjs['adjs'])),
 	'occupation': pycorpora.humans.occupations['occupations'],
+	'room': pycorpora.architecture.rooms['rooms'],
+	'passage': pycorpora.architecture.passages['passages'],
 
 	'who': ['A {{occupation}}', 'A {{adj}} {{occupation}}'],
 	'does what': ['{{verb}}s', '{{verb}}s a {{noun}}',
 		'{{verb}}s a {{adj}} {{noun}}'],
+	'where': ['at a {{room}}', 'at a {{passage}}', 'at a {{adj}} {{room}}',
+		'at a {{adj}} {{passage}}'],
 
 	'story name': ['{{Noun}}', '{{Adj}} {{Noun}}'],
-	'story summary': ['{{who}} {{does what}}.']
+	'story summary': ['{{who}} {{does what}} {{where}}.']
 }
 
 # # #

@@ -39,13 +39,13 @@ Both a test to my [story boilerplate](story-boilerplate/story.py) and a standalo
 
 A something-maker generates summaries at a computer with Python for fun by making a program for NaNoGenMo 2017. Ages 12+, rated 7.8/10 on Readery.
 
-> ## Unidentified Forefront
+> ## Manga
 >
-> A garbled machinist lightens a sorcery.
+> A alright outdoor power equipment mechanic signals a characterized projection at a trying passage.
 >
-> ## Wistful Parliament
+> ## Withholding
 >
-> A forging machine setter shops a spectre.
+> A unequal textile knitting machine setter rots a defenseless hacker at a interesting conference room.
 
 <!-- By the way, if someone *really* wants to make one of the ideas in Ten Second Summaries reality, I'd more than just love to see them. Send issues :) -->
 
