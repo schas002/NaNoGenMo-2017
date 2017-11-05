@@ -13,6 +13,14 @@ AUTHORED_BY = 'Andrew Zyabin'
 
 # # #
 
+GRAMMAR = {
+	'*': ['{{hello}} {{world}}'],
+	'hello': ['Hello', 'hello', 'Hello,', 'hello,'],
+	'world': ['World', 'world', 'World!', 'world!', 'World.', 'world.']
+}
+
+# # #
+
 def para(*objects, sep=' ', flush=False):
 	print(*objects, sep=sep, end='\n\n', file=sys.stdout, flush=flush)
 
@@ -21,12 +29,6 @@ def para(*objects, sep=' ', flush=False):
 seed = sys.argv[1] if len(sys.argv) > 1 else str(random.random())
 
 rn = random.Random(seed)
-
-grammar = {
-	'*': ['{{hello}} {{world}}'],
-	'hello': ['Hello', 'hello', 'Hello,', 'hello,'],
-	'world': ['World', 'world', 'World!', 'world!', 'World.', 'world.']
-}
 
 # # #
 
@@ -42,11 +44,11 @@ para('* * *')
 words = 0
 
 while words < 50000:
-	p = rn.choice(grammar['*'])
+	p = rn.choice(GRAMMAR['*'])
 	while True:
 		match = re.search('{{(.+?)}}', p)
 		if match:
-			p = p.replace(match[0], rn.choice(grammar[match[1]]))
+			p = p.replace(match[0], rn.choice(GRAMMAR[match[1]]))
 		else:
 			break
 	para(p)

@@ -8,7 +8,7 @@ import re
 
 # # #
 
-NAME = 'Ten Second Summaries'
+NAME = 'Twenty Second Summaries'
 PREAMBLE = 'A catalogue of novels for NaNoGenMo 2017'
 AUTHORED_BY = 'Andrew Zyabin'
 
@@ -34,9 +34,11 @@ GRAMMAR = {
 		'{{verb}}s a {{adj}} {{noun}}'],
 	'where': ['at a {{room}}', 'at a {{passage}}', 'at a {{adj}} {{room}}',
 		'at a {{adj}} {{passage}}'],
+	'with what': ['with a {{noun}}', 'with a {{adj}} {{noun}}',
+		'using a {{noun}}', 'using a {{adj}} {{noun}}'],
 
 	'story name': ['{{Noun}}', '{{Adj}} {{Noun}}'],
-	'story summary': ['{{who}} {{does what}} {{where}}.']
+	'story summary': ['{{who}} {{does what}} {{where}} {{with what}}.']
 }
 
 # # #
@@ -78,6 +80,6 @@ while words < 50000:
 
 para('* * *')
 para('And last but not least...')
-para('## Ten Second Summaries')
+para('## Twenty Second Summaries')
 para('A something-maker generates summaries at a computer with Python for fun',
 	'by making a program for NaNoGenMo 2017.')
