@@ -29,6 +29,8 @@ GRAMMAR = {
 	'room': pycorpora.architecture.rooms['rooms'],
 	'passage': pycorpora.architecture.passages['passages'],
 
+	'their': ['a', 'his', 'her', 'their'],
+
 	'who': ['A {{occupation}}', 'A {{adj}} {{occupation}}'],
 	'does what': ['{{verb}}s', '{{verb}}s a {{noun}}',
 		'{{verb}}s a {{adj}} {{noun}}'],
@@ -36,9 +38,13 @@ GRAMMAR = {
 		'at a {{adj}} {{passage}}'],
 	'with what': ['with a {{noun}}', 'with a {{adj}} {{noun}}',
 		'using a {{noun}}', 'using a {{adj}} {{noun}}'],
+	'for what': ['for a {{noun}}', 'for a {{adj}} {{noun}}',
+		'to {{verb}} {{their}} {{noun}}',
+		'to {{verb}} {{their}} {{adj}} {{noun}}'],
 
 	'story name': ['{{Noun}}', '{{Adj}} {{Noun}}'],
-	'story summary': ['{{who}} {{does what}} {{where}} {{with what}}.']
+	'story summary': ['{{who}} {{does what}} {{where}} {{with what}} ' +
+		'{{for what}}.']
 }
 
 # # #
