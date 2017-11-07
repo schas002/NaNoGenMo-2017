@@ -41,10 +41,11 @@ GRAMMAR = {
 	'for what': ['for a {{noun}}', 'for a {{adj}} {{noun}}',
 		'to {{verb}} {{their}} {{noun}}',
 		'to {{verb}} {{their}} {{adj}} {{noun}}'],
+	'how': ['by {{verb}}ing a {{noun}}', 'by {{verb}}ing an {{adj}} {{noun}}'],
 
 	'story name': ['{{Noun}}', '{{Adj}} {{Noun}}'],
 	'story summary': ['{{who}} {{does what}} {{where}} {{with what}} ' +
-		'{{for what}}.']
+		'{{for what}} {{how}}.']
 }
 
 # # #
@@ -74,11 +75,12 @@ words = 0
 while words < 50000:
 	p = rn.choice(GRAMMAR['*'])
 	while True:
-		match = re.search('{{(.+?)}}', p)
+		match = re.search(r'{{(.+?)}}', p)
 		if match:
 			p = p.replace(match[0], rn.choice(GRAMMAR[match[1]]))
 		else:
 			break
+	p = re.sub(r'a ([aeiou])', r'an \1', p)
 	para(p)
 	words += len(p.split())
 
