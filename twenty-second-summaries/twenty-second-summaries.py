@@ -17,6 +17,8 @@ AUTHORED_BY = 'Andrew Zyabin'
 GRAMMAR = {
 	'*': ['## {{story name}}\n\n{{story summary}}'],
 
+	'#': list(map(lambda a: str(a), range(10))),
+
 	'noun': pycorpora.words.nouns['nouns'],
 	'Noun': list(map(lambda a: a.capitalize(),
 		pycorpora.words.nouns['nouns'])),
@@ -30,6 +32,11 @@ GRAMMAR = {
 	'passage': pycorpora.architecture.passages['passages'],
 
 	'their': ['a', 'his', 'her', 'their'],
+	'month': ['January', 'February', 'March', 'April', 'May', 'June', 'July',
+		'August', 'September', 'October', 'November', 'December'],
+	'yy': ['{{#}}{{#}}'],
+	'year': ['20{{yy}}', '19{{yy}}', "'{{yy}}"],
+	'week': ['week', 'day', 'month', 'year', 'decade'],
 
 	'who': ['A {{occupation}}', 'A {{adj}} {{occupation}}'],
 	'does what': ['{{verb}}s', '{{verb}}s a {{noun}}',
@@ -42,10 +49,12 @@ GRAMMAR = {
 		'to {{verb}} {{their}} {{noun}}',
 		'to {{verb}} {{their}} {{adj}} {{noun}}'],
 	'how': ['by {{verb}}ing a {{noun}}', 'by {{verb}}ing an {{adj}} {{noun}}'],
+	'when': ['in {{month}}', 'in {{year}}', 'in {{month}} {{year}}',
+		'some time ago', 'a {{week}} ago'],
 
 	'story name': ['{{Noun}}', '{{Adj}} {{Noun}}'],
 	'story summary': ['{{who}} {{does what}} {{where}} {{with what}} ' +
-		'{{for what}} {{how}}.']
+		'{{for what}} {{how}} {{when}}.']
 }
 
 # # #
