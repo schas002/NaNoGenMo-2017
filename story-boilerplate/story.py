@@ -44,10 +44,11 @@ words = 0
 while words < 50000:
 	p = rn.choice(GRAMMAR['*'])
 	while True:
-		match = re.search('{{(.+?)}}', p)
+		match = re.search(r'{{(.+?)}}', p)
 		if match:
 			p = p.replace(match[0], rn.choice(GRAMMAR[match[1]]))
 		else:
 			break
+	p = re.sub(r'a ([aeiou])', r'an \1', p)
 	para(p)
 	words += len(p.split())
