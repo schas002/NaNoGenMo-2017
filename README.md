@@ -45,7 +45,7 @@ A something-maker generates summaries at a computer with Python for fun by makin
 >
 > ## Withholding
 >
-> A unequal textile knitting machine setter rots a defenseless hacker at a interesting conference room.
+> A unequal textile knitting machine setter rots a defenseless hacker at an interesting conference room.
 
 ### Twenty Second Summaries _(twenty-second-summaries)_
 
@@ -53,15 +53,31 @@ A something-maker generates summaries at a computer with Python for fun by makin
 
 Also known as Ten Second Summaries 2: The Double Boogaloo, the well-known catalogue of novel summaries finally returns! Your selling tool is selling even better! Ages 12+, rated 7.8/10 on Readery.
 
-> ## Differentiation
+> ## Organisation
 >
-> A automotive mechanic scribbles at a conference room using a commemoration.
+> A upstart home appliance repairer influences a prewar tycoon at an exit with a downbeat scooter for a ferocity by leveling a bonding in May.
 >
-> ## Cylinder
+> ## Confining Diagnosis
 >
-> A motley financial manager provides a civility at a staircase using a nobility.
+> A plumber tickles a buyout at a dumbwaiter using a certainty for a boastful rendition by rejecting a captaincy in 1933.
 
 <!-- By the way, if someone *really* wants to make one of the ideas in Ten or Twenty Second Summaries reality, I'd more than just love to see them. Send issues! 😁 -->
+
+### Nonsense _(nonsense)_
+
+> A realm of spewed-out nonsense for NaNoGenMo 2017
+
+What else did you think?
+
+> the privacy??
+>
+> Illustrator....
+>
+> * * *
+>
+> outset......
+>
+> - ! Cabot!!
 
 ## Maintainer
 
