@@ -21,13 +21,21 @@ GRAMMAR = {
 	'noun': pycorpora.words.nouns['nouns'],
 	'Noun': list(map(lambda a: a.capitalize(),
 		pycorpora.words.nouns['nouns'])),
+	'verb': list(map(lambda a: a['present'],
+		pycorpora.words.verbs['verbs'])),
+	'Verb': list(map(lambda a: a['present'].capitalize(),
+		pycorpora.words.verbs['verbs'])),
 
 	'a': ['a', 'the', '{{.}}'],
 	'A': ['A', 'The', '{{.}}'],
+	'I': ['I', 'we', 'you', 'he', 'she', 'it', 'they'],
 
-	'nonsense': ['{{noun nonsense}}{{.}}'],
+	'nonsense': ['{{noun nonsense}}{{.}}', '{{verb nonsense}}{{.}}'],
 	'noun nonsense': ['{{noun}}{{.}}', '{{Noun}}{{.}}', '{{a}} {{noun}}{{.}}',
 		'{{A}} {{noun}}{{.}}'],
+	'verb nonsense': ['{{verb}}{{.}}', '{{Verb}}{{.}}', '{{I}} {{verb}}{{.}}',
+		'how {{I}} {{verb}}?', '{{verb}} {{noun nonsense}}{{.}}',
+		'{{Verb}} {{noun nonsense}}{{.}}'],
 	'.': ['', '.', '..', '...', '!', '?']
 }
 
