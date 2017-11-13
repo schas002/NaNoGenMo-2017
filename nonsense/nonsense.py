@@ -15,8 +15,8 @@ AUTHORED_BY = 'Andrew Zyabin'
 # # #
 
 GRAMMAR = {
-	'*': ['{{nonsense}}', '## {{nonsense}}', '- {{nonsense}}',
-		'0. {{nonsense}}', '* * *'],
+	'*': ['{{nonsense}}', '{{nonsense}} {{nonsense}}', '## {{nonsense}}',
+		'- {{nonsense}}', '0. {{nonsense}}', '* * *'],
 
 	'noun': pycorpora.words.nouns['nouns'],
 	'Noun': list(map(lambda a: a.capitalize(),
@@ -26,8 +26,8 @@ GRAMMAR = {
 	'Verb': list(map(lambda a: a['present'].capitalize(),
 		pycorpora.words.verbs['verbs'])),
 
-	'a': ['a', 'the', '{{.}}'],
-	'A': ['A', 'The', '{{.}}'],
+	'a': ['a', 'the', 'some', '{{.}}'],
+	'A': ['A', 'The', 'Some', '{{.}}'],
 	'I': ['I', 'we', 'you', 'he', 'she', 'it', 'they'],
 	'in': ['in', 'with', 'to', 'on', 'of', 'at', 'as', 'into'],
 	'In': ['In', 'With', 'To', 'On', 'Of', 'At', 'As', 'Into'],
